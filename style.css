@@ -1,0 +1,577 @@
+/* Dashboard */
+
+#dashboard {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 24px;
+    background-color: #010a13; /* Warna latar belakang */
+    box-shadow: 0 0px 1px rgba(243, 240, 240, 0.3); /* Efek bayangan */
+}
+.text-dasboard{
+    color:white;
+}
+.body {
+    margin: 0;
+    padding: 0;
+    animation: body 6s infinite ; /* Sesuaikan durasi animasi sesuai kebutuhan Anda */
+    background-repeat: no-repeat;
+    background-size: cover; /* Menyesuaikan ukuran latar belakang */
+    image-rendering: pixelated; /* Menggunakan pixelated untuk tampilan yang lebih tajam */
+}
+
+
+.foto-dashboard{
+    width: 180px;
+    clip-path: circle(45% at center);
+    border-color: #333;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10%;
+    background-color: rgb(0, 26, 99);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+    opacity: 1;
+}
+
+.nav-logo {
+    width: 210px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 17px;
+}
+.text-dashboard-afie{
+    color: white;
+    font-size: 50px;
+
+}
+
+.main-content{
+    overflow: hidden;
+
+}
+.gif-dashboard{
+    position: relative;
+    width: 400px;
+    left: 1000px;
+}
+.main-content .text{
+    position: relative;
+    color: yellow;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium';
+}
+.main-content .text.first-text{
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+}
+.text.second-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010a13; /* Warna latar belakang */
+    border-left: 2px solid yellow;
+    animation: animate 4s steps(12) infinite;
+    font-family: 'Franklin Gothic Medium';
+}
+
+@keyframes animate{
+    40%, 60%{
+        left:calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    transition: 0.3s, color 0.3s;
+}
+
+a:hover {
+
+    color: yellow;
+}
+
+
+
+
+
+.main-content {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 5px;
+}
+
+.left-content {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    position: relative;
+    top: 75px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px; /* Sesuaikan ukuran maksimal foto kiri */
+}
+
+.right-content {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    flex: 2;
+    padding: 0 20px;
+    position: relative;
+    top: 90px;
+}
+.end-content{
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    display: flex;
+    position: relative;
+    bottom: 160px;
+    animation: floating 2s ease-in-out infinite;
+}
+@keyframes floating {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-10px, -10px);
+    }
+    50% {
+        transform: translate(0, -20px);
+    }
+    75% {
+        transform: translate(10px, -10px);
+    }
+}
+
+
+.right-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* Profile */
+/* Profile */
+.profile-wrapper1 {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #000, rgba(0, 109, 252, 0.479));
+    width: 100%;
+    height: 300px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Mengatasi overflow dari gambar yang mungkin keluar dari kotak */
+}
+
+
+.profile-content1 {
+    position: relative;
+    animation: profileMove 0.3s linear forwards;
+
+}
+
+@keyframes profile-content1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.foto-profile{
+    position: relative;
+    left: 20px;
+    width: 200px;
+    border-radius: 50%;
+    transition: width 0.3s ease; /* Transisi untuk ukuran */
+}
+.foto-profile:hover{
+    width: 230px;
+}
+
+
+.profile-content1-2 {
+    color: white;
+    margin-left: 50px;
+    opacity: 0;
+    animation: profile-content1-2 1s ease-in-out forwards;
+}
+@keyframes profile-content1-2  {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.hr-pendek{
+    width: 200px;
+    position: relative;
+    margin-left: -5px;
+}
+
+.text-aboutme-profile{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+}
+.text-letsbefriend-profile{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+}
+.text-profile-field{
+    color: rgb(25, 116, 219);
+}
+.text-profile-field-stop{
+    color: white;
+}
+.button-download-cv{
+    font-size: 12px;
+    color: #f9ca24; /* Warna teks kuning */
+    background: linear-gradient(to right, #232323, #000); /* Efek gradien untuk latar belakang */
+    border: 2px solid #f9ca24; /* Border kuning */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.button-download-cv:hover {
+    background-color: #f9ca24; /* Warna kuning saat dihover */
+    color: #ffffff; /* Warna teks hitam saat dihover */
+}
+.foto-instagram-profile{
+    border-radius: 50%;
+    width: 21px;
+}
+.foto-instagram-profile:hover{
+    size: 90px;
+}
+.ea{
+    width: 50px;    
+    color: #f9ca24; /* Warna teks kuning */
+    background: linear-gradient(to right, #232323, #000); /* Efek gradien untuk latar belakang */
+    border: 2px solid #f9ca24; /* Border kuning */
+    border-radius: 25%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.ea.hover{
+    background-color: white;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Profile Wrapper2 */
+.profile-wrapper2 {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Set a fixed width, adjust as needed */
+    height: 700px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.profile-content2 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f9ca24;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 280px;
+    transition: width 0.3s, height 0.3s; 
+    animation: slideIn 0.5s ease-out; 
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.profile-content2:hover{
+    width: 250px;
+    height: 250px;
+}
+
+.logo-html{
+    border-radius: 50%;
+    width: 50px;
+}
+.hr-custom-gaje{
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+    width: 1118px;
+    border: none;
+    height: 2px;
+    animation: slideInFromLeft 0.5s ease-in; /* Menggunakan animasi slideInFromLeft selama 0.5 detik dengan efek ease-out */
+}
+.hr-gaje2{
+    color: white;
+    margin-left: auto;
+    margin-right: 0;
+    width: 225px;
+}
+.skill{
+    position: relative;
+    left: 130px;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+}
+@keyframes slideInFromLeft {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes profileMove {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Education */
+.education-wrapper1 {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #000, rgba(0, 109, 252, 0.479));
+    width: 100%;
+    height: 700px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.education-content1 {
+    position: relative;
+    animation: profileMove 0.3s linear forwards;
+}
+
+.education-content1-2 {
+    color: white;
+    margin-left: 50px;
+    opacity: 0;
+    animation: profile-content1-2 1s ease-in-out forwards;
+}
+
+
+.foto-gedung-education {
+    position: relative;
+    margin: 24px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    animation: changeImage 12s infinite, blinkAnimation 1s infinite;
+    image-rendering: pixelated;
+    }
+
+
+@keyframes changeImage {
+    0%, 25% {
+        content: url('images/gedung_unikom.png'); /* Ganti 'path-to-image1.jpg' dengan path gambar pertama */
+        opacity: 1;
+    }
+    25%, 50% {
+        content: url('images/gedung1_unikom.png'); /* Ganti 'path-to-image2.jpg' dengan path gambar kedua */
+        opacity: 0.7;
+    }
+    50%, 75% {
+        content: url('images/gedung2_unikom.png'); /* Ganti 'path-to-image3.jpg' dengan path gambar ketiga */
+        opacity: 1;
+    }
+    75%, 100% {
+        content: url('images/gedung_unikom.png'); /* Kembali ke gambar pertama pada akhir */
+        opacity: 0.7;
+    }
+}
+
+.education-text-b {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    position: relative;
+    margin: 0 25px;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.hover-linkedin{
+    color: white;
+}
+.hover-linkedin:hover{
+    color:darkslategray ;
+}
+.hover-instagram{
+    color: white;
+}
+.hover-instagram:hover{
+    color:darkslategray ;
+}
+
+
+/* Respnsive */
+@media only screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .gif-dashboard {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    .nav {
+        font-size: 14px;
+    }
+
+    .nav-logo {
+        width: 150px;
+        height: 70px;
+    }
+
+    .text-dashboard-afie {
+        font-size: 40px;
+    }
+
+    .main-content .text {
+        font-size: 18px;
+    }
+
+    .foto-dashboard {
+        width: 150px;
+    }
+
+    .profile-content1-2 {
+        font-size: 14px;
+    }
+
+    .profile-wrapper2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profile-content2 {
+        width: 100%;
+        height: 150px;
+        margin: 10px 0;
+    }
+
+    .logo-html {
+        width: 0px;
+    }
+
+    .hr-custom-gaje {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 5px;
+    }
+}

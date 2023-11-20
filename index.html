@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="body">
+        <nav class="nav">
+            <table class="table">
+                <tr>
+                    <td>
+                        <a href="#" onclick="changeContent('dashboard')"> <img src="images/logo-afie.png" class="nav-logo"> </a>
+                    </td>
+                    <td>
+                        <a href="#" onclick="changeContent('profile')"> Profile </a>
+                    </td>
+                    <td>
+                        <a href="cv/CV_AFIE_2023.pdf" onclick="changeContent('...')"> Summary </a>
+                    </td>
+                    <td>
+                        <a href="#" onclick="changeContent('education')"> Education </a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+        <div id="dashboard">
+            <!-- Default content or content that will change -->
+                <div class="main-content">
+                    <div class="left-content">
+                        <!-- Foto atau konten kiri di sini -->
+                        <img src="images/foto_afie.jpeg" alt="Foto" class="foto-dashboard">
+                    </div>
+                    <div class="right-content">
+                        <!-- Teks atau konten kanan di sini -->
+                        <span class="text-dashboard-afie">Hello I'm Afie 👋</span><br>
+                        <span class="text first-text">This is My Website & Portofolio </span><br>
+                        <span class="text second-text">Welcome ^ ^</span>
+                    <div class="end-content">
+                        <img src="images/tech.png" alt="" class="gif-dashboard">
+                    </div>  
+                </div>
+        </div>
+<script>
+// <Animasi Typing>
+    const text = document.querySelector(".second-text");
+
+    const textLoad = () =>{
+        setTimeout(() => {
+            text.textContent = "Welcome ^ ^";
+        },0);
+        setTimeout(() => {
+            text.textContent = "I curently study at Universitas Komputer Indonesia ";
+        },4000);
+        setTimeout(() => {
+            text.textContent = "I Study Informatic Engineering Degree ";
+        },8000);
+    };
+
+    textLoad();
+    setInterval(textLoad, 12000);
+// </Animasi Typing>
+
+
+            function changeContent(page) {
+                const contentDiv = document.getElementById('dashboard');
+                // summary
+    if(page === "dashboard"){
+        contentDiv.innerHTML = `
+        <div id="dashboard">
+            <!-- Default content or content that will change -->
+                <div class="main-content">
+                    <div class="left-content">
+                        <!-- Foto atau konten kiri di sini -->
+                        <img src="images/foto_afie.jpeg" alt="Foto" class="foto-dashboard">
+                    </div>
+                    <div class="right-content">
+                        <!-- Teks atau konten kanan di sini -->
+                        <span class="text-dashboard-afie">Hello I'm Afie 👋</span><br>
+                        <span class="text first-text">This is My Website & Portofolio </span><br>
+                        <span class="text second-text">Welcome ^ ^</span>
+                    <div class="end-content">
+                        <img src="images/tech.png" alt="" class="gif-dashboard">
+                    </div>  
+                </div>  
+        </div>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; AFIE, 2023</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/afie-wijaya-9419b6190/" class="hover-linkedin">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/cong.afi/" class="hover-instagram">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+        
+        `;
+    }
+
+    else if (page === 'profile') {
+                    contentDiv.innerHTML = `
+                    <div class="profile-wrapper1">
+                        <div class="profile-content1">
+                            <img src="images/foto_afie2.jpeg" class='foto-profile'>
+                        </div>
+                        <div class="profile-content1-2">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span class='text-aboutme-profile'>ABOUT ME</span><br>
+                                    </td>
+                                    <td>
+                                        <span class='text-letsbefriend-profile'>Let's be Friend</span><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <hr class="hr-pendek">
+                                    </td>
+                                    <td>
+                                        <hr class="hr-pendek">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Let me introduce myself, im Afie & this is my personal website for portofolio, I curently study at Universitas Komputer Indonesia,
+                                        As undergraduate informatic engineering degree, My dream working field is arround <span class='text-profile-field'>Programmer</span>, <span> <span class='text-profile-field'>Fullstack Developer</span>, <span class='text-profile-field'>Data Scientist</span>.<br> <br>
+                                        <span class='text-profile-field-stop'>Hopefully i will be finishing my study on 2026<br> This is my CV :
+                                        <a href="cv/CV_AFIE_2023.pdf" download="filename.pdf" >
+                                            <button class="button-download-cv">Download CV</button>
+                                        </a> 
+                                    </td>
+                                    <td>
+                                        Hey I would like to make more friend's & build a good network, My curent degree is my dream degree & im so passionate, 
+                                        I also love to stick arround the Internet, Social Media,  
+                                        I preferably<br> love creative industry such as content creation such as youtube video thought process and creation, I also love anime. <br>
+                                        Hey don't forget to follow me on social:
+
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td>
+                                        <a href="https://www.tiktok.com/@culturedstudent" class="ea hover"> <img src="images/instagram_logo.png" class="foto-instagram-profile"></a>
+                                        <a href="https://www.instagram.com/cong.afi/" class="ea hover"> <img src="images/tiktok_logo.png" class="foto-instagram-profile"></a>
+                                        <a href="https://www.linkedin.com/in/afie-wijaya-9419b6190/" class="ea hover"> <img src="images/linkedin_logo.png" class="foto-instagram-profile"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="profile-wrapper2">
+                        
+
+                    <table>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <center><span class="skill">Skill & Capability </span><br>
+                                <hr class="hr-gaje2">
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <center>
+                                    <hr class="hr-custom-gaje">
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <center>
+                                    <hr class="hr-custom-gaje">
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="profile-content2">
+                                    <img src="images/html_logo.png" class="logo-html">
+                                    <h2>HTML</h2>
+                                    <p> For Website Structure  & <br>Tools to Build the Website
+                                </div>
+                            </td>
+                            <td>
+
+                                <div class="profile-content2">
+                                    <img src="images/css_logo.png" class="logo-html">
+                                    <h2>CSS</h2>
+                                    <center><p> For Website Design  & <br> Tools as Creation of the Website
+                                </div>
+                            </td>
+                            <td>
+
+                                <div class="profile-content2">
+                                    <img src="images/javascript_logo.png" class="logo-html">
+                                    <h2>Javascript</h2>
+                                    <p> For Website Functional  & <br>Tools to Agile the Website
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <center>
+                                    <hr class="hr-custom-gaje">
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="profile-content2">
+                                    <img src="images/php_logo.png" class="logo-html">
+                                    <h2>PHP</h2>
+                                    <p> For Website Backend & <br> CRUD Tools for Data
+                                </div>
+                            </td>
+                            <td>
+
+                                <div class="profile-content2">
+                                    <img src="images/java_logo.png" class="logo-html">
+                                    <h2>Java</h2>
+                                    <center><p> For Programming  & <br> Tools to Create an Application with GUI & Implement CRUD/Backend
+                                </div>
+                            </td>
+                            <td>
+                                <div class="profile-content2">
+                                    <img src="images/python_logo.png" class="logo-html">
+                                    <h2>Python</h2>
+                                    <center><p> For Programming  & <br> Data Science tools such as Pandas, Matplotlib & Numpy
+                                </div>
+                            </td>
+                        </tr>
+                        <footer class="footer">
+<div class="footer-content">
+        <p>&copy; AFIE, 2023</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/afie-wijaya-9419b6190/" class="hover-linkedin">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/cong.afi/" class="hover-instagram">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+                    </div>
+
+                    `;
+    }
+    else if (page === 'summary') {
+                    contentDiv.innerHTML = `
+
+                    
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; AFIE, 2023</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/afie-wijaya-9419b6190/" class="hover-linkedin">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/cong.afi/" class="hover-instagram">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+                    `;
+                    // education
+    } 
+    else if (page === 'education') {
+                    contentDiv.innerHTML = `
+                    <div class="education-wrapper1">
+                        <div class="education-content1">
+                            <img src="" class="foto-gedung-education">
+                        </div>
+                        <div class="education-content1-2">
+                            <table >
+                                <tr>
+                                    <td>
+                                        <span class="education-text-b"> University
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>  
+                                    <td>
+                                        <span class="education-text-b">: 
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>  
+                                    <td>
+                                        <span class="education-text-b">Universitas Komputer Indonesia.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="education-text-b">Address
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>  
+                                    <td>
+                                        <span class="education-text-b">:
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>  
+                                    <td>
+                                        <span class="education-text-b">Bandung Jl. Dago No. 160-162,Kota Bandung, Jawa Barat 40132.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="education-text-b">Degree
+                                    </td>
+                                    <td>
+                                    </td> 
+                                    <td>
+                                    </td> 
+                                    <td>
+                                        <span class="education-text-b">:
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>  
+                                    <td>
+                                        <span class="education-text-b">Informatic Engineering/Computer Science.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="education-text-b">Graduation
+                                    </td>
+                                    <td>
+                                    </td> 
+                                    <td>
+                                    </td> 
+                                    <td>
+                                        <span class="education-text-b">:
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>  
+                                    <td>
+                                        <span class="education-text-b"> 2026(estimation).
+                                    </td>
+                                </tr>
+                            </table>
+                              
+                            
+                        </div>
+                    </div>
+
+
+
+
+
+    <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; AFIE, 2023</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/afie-wijaya-9419b6190/" class="hover-linkedin">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/cong.afi/" class="hover-instagram">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+                    `;
+                    
+    }
+    const text = document.querySelector(".second-text");
+
+    const textLoad = () =>{
+        setTimeout(() => {
+            text.textContent = "Welcome ^ ^";
+        },0);
+        setTimeout(() => {
+            text.textContent = "I curently study at Universitas Komputer Indonesia ";
+        },4000);
+        setTimeout(() => {
+            text.textContent = "I Study Informatic Engineering Degree ";
+        },8000);
+    };
+
+    textLoad();
+    setInterval(textLoad, 12000);    
+}
+</script>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; AFIE, 2023</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/afie-wijaya-9419b6190/" class="hover-linkedin">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/cong.afi/" class="hover-instagram">Instagram</a></li>
+        </ul>
+    </div>
+</footer>
+
+</html>
