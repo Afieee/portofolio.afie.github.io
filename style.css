@@ -54,11 +54,7 @@
     overflow: hidden;
 
 }
-.gif-dashboard{
-    position: relative;
-    width: 400px;
-    left: 1000px;
-}
+
 .main-content .text{
     position: relative;
     color: yellow;
@@ -141,14 +137,41 @@ a:hover {
     top: 90px;
 }
 .end-content{
+    align-items: center;
+    justify-content: center;
     -webkit-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
     display: flex;
     position: relative;
+    left: -800px;
     bottom: 160px;
     animation: floating 2s ease-in-out infinite;
 }
+.gif-dashboard{
+    position: relative;
+    width: 400px;
+    left: 1000px;
+}
+@media only screen and (max-width: 800px) {
+    .end-content{
+        -webkit-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none; 
+        display: flex;
+        position: relative;
+        left: -200px;
+        bottom: 160px;
+        animation: floating 2s ease-in-out infinite;
+    }
+    .gif-dashboard{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        left: 800px;
+    }
+}
+
 @keyframes floating {
     0%, 100% {
         transform: translate(0, 0);
@@ -176,6 +199,7 @@ a:hover {
 .profile-wrapper1 {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(to right, #000, rgba(0, 109, 252, 0.479));
     width: 100%;
     height: 300px;
@@ -239,6 +263,7 @@ a:hover {
     font-size: 30px;
 }
 .text-letsbefriend-profile{
+
     font-family: 'Franklin Gothic Medium';
     font-size: 30px;
 }
@@ -295,6 +320,7 @@ a:hover {
 .profile-wrapper2 {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%; /* Set a fixed width, adjust as needed */
     height: 700px;
     color: white;
@@ -312,7 +338,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 280px;
     transition: width 0.3s, height 0.3s; 
     animation: slideIn 0.5s ease-out; 
 }
@@ -346,13 +371,10 @@ a:hover {
 }
 .hr-gaje2{
     color: white;
-    margin-left: auto;
-    margin-right: 0;
-    width: 225px;
+    width: 425px;
 }
 .skill{
     position: relative;
-    left: 130px;
     font-family: 'Franklin Gothic Medium';
     font-size: 30px;
 }
@@ -506,72 +528,23 @@ a:hover {
 
 
 /* Respnsive */
-@media only screen and (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        height: auto;
+@media only screen and (max-width: 1000px) {
+    .text-dashboard-afie{
+        color: white;
+        font-size: 25px;
+    
     }
-
-    .left-content,
-    .right-content {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
+    .main-content .text.first-text{
+        color: white;
+        font-size: 20px;
     }
-
-    .gif-dashboard {
-        width: 100%;
-        margin: 10px 0;
+    .text.second-text::before{
+        color: white;
+        font-size: 20px;
     }
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 480px) {
-    .nav {
-        font-size: 14px;
-    }
 
-    .nav-logo {
-        width: 150px;
-        height: 70px;
-    }
 
-    .text-dashboard-afie {
-        font-size: 40px;
-    }
 
-    .main-content .text {
-        font-size: 18px;
-    }
 
-    .foto-dashboard {
-        width: 150px;
-    }
-
-    .profile-content1-2 {
-        font-size: 14px;
-    }
-
-    .profile-wrapper2 {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .profile-content2 {
-        width: 100%;
-        height: 150px;
-        margin: 10px 0;
-    }
-
-    .logo-html {
-        width: 0px;
-    }
-
-    .hr-custom-gaje {
-        width: 100%;
-    }
-
-    .footer {
-        padding: 5px;
-    }
-}
