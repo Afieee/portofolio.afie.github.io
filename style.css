@@ -127,7 +127,7 @@
 
 @keyframes animate{
     40%, 60%{
-        left:calc(100% + 4px);
+        left:calc(100% + 1px);
     }
     100%{
         left: 0%;
@@ -196,8 +196,10 @@ a:hover {
 }
 .gif-dashboard{
     position: relative;
-    width: 400px;
+    width: 600px;
+    height: 550px;
     left: 1000px;
+    bottom: 100px;
 }
 @media only screen and (max-width: 1300px) {
     .end-content{
@@ -238,7 +240,7 @@ a:hover {
     font-size: 24px;
     margin-bottom: 10px;
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 690px){
     .end-content{
         -webkit-user-select: none; 
         -ms-user-select: none; 
@@ -425,7 +427,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%; /* Set a fixed width, adjust as needed */
-    height: 700px;
+    height: 870px;
     color: white;
     margin: 0;
     padding: 0;
@@ -436,7 +438,7 @@ a:hover {
 
 .profile-content2 {
     width: 200px;
-    height: 200px;
+    height: 250px;
     border: 2px solid #f9ca24;
     display: flex;
     flex-direction: column;
