@@ -44,11 +44,7 @@
     margin-left: 10px;
     margin-top: 17px;
 }
-.text-dashboard-afie{
-    color: white;
-    font-size: 50px;
 
-}
 
 .main-content{
     overflow: hidden;
@@ -61,6 +57,11 @@
     font-size: 30px;
     font-weight: 600;
     font-family: 'Franklin Gothic Medium';
+}
+.text-dashboard-afie{
+    color: white;
+    font-size: 50px;
+
 }
 .main-content .text.first-text{
     color: white;
@@ -78,6 +79,51 @@
     animation: animate 4s steps(12) infinite;
     font-family: 'Franklin Gothic Medium';
 }
+
+
+/* 1124 */
+@media only screen and (max-width: 1300px){
+    .main-content .text{
+        position: relative;
+        color: yellow;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium';
+    }
+    .text-dashboard-afie{
+        color: white;
+        font-size: 17px;
+    
+    }
+    .main-content .text.first-text{
+        color: white;
+        font-family: 'Franklin Gothic Medium';
+    }
+    .text.second-text::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 17px;
+        background-color: #010a13; /* Warna latar belakang */
+        border-left: 2px solid yellow;
+        animation: animate 4s steps(12) infinite;
+        font-family: 'Franklin Gothic Medium';
+    }
+    @keyframes animate{
+        40%, 60%{
+            left:calc(100% + 4px);
+            font-size: 17px;
+        }
+        100%{
+            left: 0%;
+            font-size: 17px;
+        }
+    }
+}
+
 
 @keyframes animate{
     40%, 60%{
@@ -153,21 +199,21 @@ a:hover {
     width: 400px;
     left: 1000px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1300px) {
     .end-content{
         -webkit-user-select: none; 
         -ms-user-select: none; 
         user-select: none; 
         display: flex;
         position: relative;
-        left: -200px;
-        bottom: 160px;
+        left: -500px;
+        bottom: 50px;
         animation: floating 2s ease-in-out infinite;
     }
     .gif-dashboard{
         position: relative;
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 300px;
         left: 800px;
     }
 }
